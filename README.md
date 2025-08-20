@@ -1,7 +1,8 @@
 # gg_namecard_gen
 
 Generate a name card using data from puddle.farm.
-![example](/postcard.png)
+![example](./postcard.png)
+
 (namecard of bilibili@ON_SELLING)[not me]
 ## Example
 
