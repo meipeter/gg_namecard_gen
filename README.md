@@ -3,7 +3,7 @@
 Generate a name card using data from puddle.farm.
 
 ## Example
-![example](postcard.png)(mf namecard bilibili@ON_SELLING)
+![example](/postcard.png)(namecard of bilibili@ON_SELLING)[not me]
 ```rust
 use gg_namecard_gen::{generate_gg_namecard, PlayerResponse};
 use anyhow::Result;
