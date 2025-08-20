@@ -1,4 +1,5 @@
 # gg_namecard_gen
+![Crates.io Version](https://img.shields.io/crates/v/gg_namecard_gen)
 
 Generate a name card using data from puddle.farm.
 ![example](./postcard.png)
