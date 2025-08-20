@@ -23,14 +23,20 @@ fn main() -> Result<()> {
         .enable_all()
         .build()?;
     let id = Cli::parse().id;
-    let c = Configuration::default();
-    let p = rt.block_on(async { player_id_get(&c, id).await })?;
-    let res = rt.block_on(async { avatar_player_id_get(&c, id).await.unwrap().bytes().await })?;
-    let a = ImageReader::new(Cursor::new(res))
+    let config = Configuration::default();
+    let player = rt.block_on(async { player_id_get(&config, id).await })?;
+    let respone = rt.block_on(async {
+        avatar_player_id_get(&config, id)
+            .await
+            .unwrap()
+            .bytes()
+            .await
+    })?;
+    let avatar = ImageReader::new(Cursor::new(respone))
         .with_guessed_format()?
         .decode()?
         .to_rgba8();
-    let img = generate_gg_namecard(p, a)?;
+    let img = generate_gg_namecard(player, avatar)?;
     img.save("./ggnamecard.png")?;
     Ok(())
 }

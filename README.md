@@ -19,6 +19,9 @@ You can also install it by:
 ## Example
 
 ```rust
+
+//To known how to work with puddle.farm API, you can check out /src/main
+
 use gg_namecard_gen::generate_gg_namecard;
 use puddle_farm_api_client_openapi_client::models::PlayerResponse;
 use anyhow::Result;
