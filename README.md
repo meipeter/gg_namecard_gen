@@ -5,6 +5,17 @@ Generate a name card using data from puddle.farm.
 ![example](./postcard.png)
 
 (namecard of bilibili@ON_SELLING)[not me]
+# Quick try!
+```bash
+    https://github.com/meipeter/gg_namecard_gen.git
+    cd gg_namecard_gen
+    cargo run 240608152606560723
+```
+You can also install it by:
+```bash
+   cargo install gg_namecard_gen
+   gg_namecard_gen 240608152606560723
+```
 ## Example
 
 ```rust
