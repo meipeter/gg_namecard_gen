@@ -2,6 +2,11 @@
 name = "gg_namecard_gen"
 version = "0.1.0"
 edition = "2024"
+authors =["meipeter"]
+readme = "README.md"
+repository = "https://github.com/meipeter/gg_namecard_gen"
+license = "MIT"
+categories = ["multimedia::images"]
 
 [dependencies]
 ab_glyph = "0.2.31"
