@@ -7,7 +7,8 @@ Generate a name card using data from puddle.farm.
 ## Example
 
 ```rust
-use gg_namecard_gen::{generate_gg_namecard, PlayerResponse};
+use gg_namecard_gen::generate_gg_namecard;
+use puddle_farm_api_client_openapi_client::models::PlayerResponse;
 use anyhow::Result;
 
 fn main() -> Result<()> {
